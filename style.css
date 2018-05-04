@@ -228,6 +228,7 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 .dropdown:visited {
     background-color: transparent;
 }
+
 /*      -----    .dropdown:visited There is a different grey color once the hamburger menu has been visited, when I shrink the browser size, but not when I do 
         -----    "ctrl alt i" and change the device size. There is no :visitedset, and setting it to no background color as above doesn't work. I've also tried :focus.
 */
