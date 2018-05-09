@@ -15,7 +15,7 @@
 
 
 
-<body>
+<body data-target=".navbar" data-spy="scroll" data-offset-top="100">                /* what does data-offset do and why is it not working */
 
 
 
@@ -25,7 +25,7 @@
 
     <!-- Nav / Main -->
 
-    <nav class="navbar navbar-default fluid-container navbar-fixed-top" id="navbarb">
+    <nav class="navbar navbar-default fluid-container navbar-fixed-top" id="navbar">
         <div class="fluid-container">
             <a href="index.html" class="navbar-brand">
                 <img src="assets/logo.jpg" class="logo-nav" alt="Logo">
@@ -46,7 +46,7 @@
             <!-- Nav / Dropdown -->
 
             <div class="dropdown">
-                <button type="button" class="dropbtn navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <button type="button" class="dropbtn navbar-toggle" data-toggle="collapse" aria-expanded="false">
                 <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -77,7 +77,7 @@
 
 
 
-    <section class="container-fluid scroll half-page home black white-text" id="home">
+    <section class="container-fluid scroll home black white-text" id="home">
         <div class="row">
             <div class="col-xs-12 section-header">
                 <h1>
@@ -108,13 +108,24 @@
                 </h1>
             </div>
             <div class="col-xs-12">
+                <p>
+                    Hi, I'm Dean Parker. I'm a musician originally from Reading. Here's where my story began...
+                </p>
                 <h3>
-                    My Background
+                    My Roots
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    I had my first guitar lesson when I was 9, and had them through my school for about a year. After getting bored, my mum encouraged me to continue 
+                    and asked my uncle to teach me. He did so for 6 months but had to stop, but by this time I was improving, and good enough/enjoyed it enough to not 
+                    want to stop this time.
+                    <br>I've been teaching myself ever since, both guitar and music theory, and have studied music for GCSE and A Level.
+                </p>
+                <h3>
+                    My Experience
+                </h3>
+                <p>
+                    I've played to live audiences of thousands, I have a bi-monthly gig at a local arts centre, and I'm a part of several local bands. I play the cajon 
+                    regularly, and have dabbled in bass guitar too.
                 </p>
             </div>
             <div class="col-xs-12">
@@ -122,9 +133,21 @@
                     My Band
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    My band is a blues trio, with acoustic guitar, vocals, bass guitar and drums. We sometimes include keys, too.
+                </p>
+                <h5>
+                    Dennis Armstrong
+                </h5>
+                <p>
+                    Dennis is my bassist and often sings backing vocals. He's a musician who never ceases to amaze me - always improving, always showing me the latest 
+                    skill or technique he's learnt - and I've worked with him for almost 3 years now.
+                </p>
+                <h5>
+                    Paul Youngs
+                </h5>
+                <p>
+                    Paul is the best drummer I've ever played with, and is an unnaturally natural musician. He's taught himself other instruments too, and is one of 
+                    the best pianists I know.
                 </p>
             </div>
         </article>
@@ -151,11 +174,45 @@
                 <h3>
                     Images
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
-                </p>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="assets/1.jpeg" alt="Picture of the band.">
+                        </div>
+                        <div class="item">
+                            <img src="assets/2.jpeg" alt="Picture of the band.">
+                        </div>
+                        <div class="item">
+                            <img src="assets/3.jpeg" alt="Picture of the band.">
+                        </div>
+                        <div class="item">
+                            <img src="assets/4.jpeg" alt="Picture of the band.">
+                        </div>
+                        <div class="item">
+                            <img src="assets/5.jpeg" alt="Picture of the band.">
+                        </div>
+                        <div class="item">
+                            <img src="assets/6.jpeg" alt="Picture of the band.">
+                        </div>
+                        ......
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
             <div class="col-xs-12">
                 <h3>
@@ -206,7 +263,7 @@
                     after our special day! Jane x
                 </p>
                 <blockquote class="row">
-                    <p>Mark and Jane    |    Wedding    |    Southampton</p>        <!-- this blockquote height is huge but it's the content, not padding/margin -->
+                    <p>Mark and Jane    |    Wedding    |    Southampton</p>
                 </blockquote>
             </div>
             <div class="col-xs-12">

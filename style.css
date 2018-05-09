@@ -1,6 +1,6 @@
 /* ---------------               General               --------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt|Ruda:900|Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt:400,500|Ruda:900|Russo+One');
 
 /*
 font-family: 'Kaushan Script', cursive;
@@ -51,7 +51,8 @@ body {
 }
 
 .page {
-    min-height: 95vh;
+    min-height: 95vh;                                                                /* this only goes to min height and no further as though it's max height */
+    padding-bottom: 25px;
 }
 
 .page h1 {
@@ -74,9 +75,14 @@ body {
     font-size: 12px;
 }
 
+.page h5 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+}
+
 .clear {
     background-color: transparent;
-    height: 25vh;
+    height: 30vh;
 }
 
 
@@ -127,10 +133,11 @@ body {
 /* ---------------               Nav               --------------- */
 
 .navbar {
-    background-color: #000;
+    background-color: #000;                    /* when the content background is white, can the navbar background change to white too, and change back to black etc? */
     font-family: 'Ruda', sans-serif;
     margin-bottom: 0;
-}
+    border: none;
+}                                                    /* I want the navbar to be about 5px height until you hover on it, or to enlarge once you scroll, JavaScript? */
 
 .navbar-default .navbar-nav>li>a {
     color: #fff
@@ -152,7 +159,7 @@ body {
     background-color: #fff;
     border: 1px solid #000;
     bottom: 8px;
-}
+}                                                                                                                        /* how to make the underline on home change */
 
 nav>li>a, .navbar-default .navbar-nav>li>a {
     transition: all 0.15s ease-in-out;
@@ -225,18 +232,6 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     background-color: rgba(255,255,255,0.6);
 }
 
-.dropdown:visited {
-    background-color: transparent;
-}
-
-/*      -----    .dropdown:visited There is a different grey color once the hamburger menu has been visited, when I shrink the browser size, but not when I do 
-        -----    "ctrl alt i" and change the device size. There is no :visitedset, and setting it to no background color as above doesn't work. I've also tried :focus.
-*/
-
-a[ id= "home" ]:target ~ .home {
-    -webkit-transform: translateY( 50px);
-    transform: translateY( 50px );
-}
 
 
 @media (min-width:768px) {
@@ -276,13 +271,10 @@ a[ id= "home" ]:target ~ .home {
 /* ---------------               Home               --------------- */
 
 .home {
-    margin-top: 50px;
-    min-height: 50vh;
-}
-
-.half-page {
-    min-height: 40vh;
-}
+    margin-top: 0;
+    padding-top: 20vh;
+    min-height: 100vh;
+}                                                                        /* a downwards arrow due to the menu being hidden, that scrolls down to our-story */
 
 section .section-header {
     letter-spacing: 3px;
@@ -354,6 +346,14 @@ section .section-header h3 {
 
 
 /* ---------------               .our story               --------------- */
+
+/* ---------------               Media               --------------- */
+
+.carousel img {
+    height: 50vh;
+}
+
+/* ---------------               .media               --------------- */
 
 /* ---------------               Testimonials               --------------- */
 
