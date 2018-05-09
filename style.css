@@ -349,8 +349,9 @@ section .section-header h3 {
 
 /* ---------------               Media               --------------- */
 
-.carousel img {
-    height: 50vh;
+.carousel-inner img {
+  margin: auto;
+  max-height: 60vh;
 }
 
 /* ---------------               .media               --------------- */
