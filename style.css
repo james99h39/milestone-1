@@ -22,18 +22,6 @@ body {
     padding-top: 0;
 }
 
-.scroll {
-    width: 100%;
-    height: 500px;
-    z-index:0; 
-    -webkit-transform: translateZ( 0 );
-    transform: translateZ( 0 );
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;                                        /* this doesn't work */
-}
-
 .black {
     background-color: #000;
 }
@@ -51,8 +39,11 @@ body {
 }
 
 .page {
-    min-height: 95vh;                                                                /* this only goes to min height and no further as though it's max height */
-    padding-bottom: 25px;
+    min-height: 95vh;
+    /* this only goes to min height and no further as though it's max height */
+    padding-bottom: 30px;
+    margin: 7px;
+    border-radius: 1vh;
 }
 
 .page h1 {
@@ -93,16 +84,17 @@ body {
         background-image: url('assets/background.jpeg');
     }
     .page h1 {
-    font-size: 30px;                    /* do i need font-size and margin-top? */
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 15px;
+        font-size: 30px;
+        /* do i need font-size and margin-top? */
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 15px;
     }
     .page h3 {
-    font-size: 16px;
+        font-size: 16px;
     }
     .page p {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 
@@ -111,17 +103,17 @@ body {
         background-image: url('assets/background-lg.jpeg');
     }
     .page h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-bottom: 25px;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 50px;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-bottom: 30px;
     }
     .page h3 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 0px;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
     }
     .page p {
         font-size: 16px;
@@ -133,11 +125,14 @@ body {
 /* ---------------               Nav               --------------- */
 
 .navbar {
-    background-color: #000;                    /* when the content background is white, can the navbar background change to white too, and change back to black etc? */
+    background-color: #000;
+                                            /* when the content background is white, can the navbar background change to white too, and change back to black etc? */
     font-family: 'Ruda', sans-serif;
     margin-bottom: 0;
     border: none;
-}                                                    /* I want the navbar to be about 5px height until you hover on it, or to enlarge once you scroll, JavaScript? */
+}
+
+/* I want the navbar to be about 5px height until you hover on it, or to enlarge once you scroll, JavaScript? */
 
 .navbar-default .navbar-nav>li>a {
     color: #fff
@@ -159,13 +154,17 @@ body {
     background-color: #fff;
     border: 1px solid #000;
     bottom: 8px;
-}                                                                                                                        /* how to make the underline on home change */
+}
 
-nav>li>a, .navbar-default .navbar-nav>li>a {
+/* how to make the underline on home change */
+
+nav>li>a,
+.navbar-default .navbar-nav>li>a {
     transition: all 0.15s ease-in-out;
 }
 
-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
     transform: scale(1.2);
     color: #ccc;
     background-color: transparent;
@@ -205,9 +204,9 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     min-width: 25%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: 62px;
 }
@@ -229,14 +228,14 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 
 
 @media (min-width:768px) {
     .logo-nav {
-    height: 50px;
+        height: 50px;
     }
 }
 
@@ -257,12 +256,12 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
         margin-left: 0;
     }
     .logo-nav {
-    width: auto;
-    height: 79px;
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-top: -30px;
-    margin-left: 30px;
+        width: auto;
+        height: 79px;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: -30px;
+        margin-left: 30px;
     }
 }
 
@@ -274,7 +273,11 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     margin-top: 0;
     padding-top: 20vh;
     min-height: 100vh;
-}                                                                        /* a downwards arrow due to the menu being hidden, that scrolls down to our-story */
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+/* a downwards arrow due to the menu being hidden, that scrolls down to our-story */
 
 section .section-header {
     letter-spacing: 3px;
@@ -299,43 +302,43 @@ section .section-header h3 {
 
 @media (min-width:768px) {
     section {
-    margin-top: 0;
-}    
+        margin-top: 0;
+    }
     section .section-header {
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 3px;
-    color: #fff;
-    text-align: center;
-    margin-top: 30px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-family: 'Kaushan Script', cursive;
+        letter-spacing: 3px;
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     section .section-header h1 {
-    font-size: 55px;
+        font-size: 55px;
     }
     section .section-header h3 {
-    font-size: 30px;
-    margin-top: 10px;
+        font-size: 30px;
+        margin-top: 10px;
     }
 }
 
 @media (min-width:992px) {
     section {
-    margin-top: 50px
+        margin-top: 50px
     }
     section .section-header {
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 3px;
-    color: #fff;
-    text-align: center;
-    margin-top: 25px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-family: 'Kaushan Script', cursive;
+        letter-spacing: 3px;
+        color: #fff;
+        text-align: center;
+        margin-top: 25px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     section .section-header h1 {
-    font-size: 75px;
+        font-size: 75px;
     }
     section .section-header h3 {
-    font-size: 40px;
-    margin-top: 15px;
+        font-size: 40px;
+        margin-top: 15px;
     }
 }
 
@@ -343,15 +346,54 @@ section .section-header h3 {
 
 /* ---------------               Our Story               --------------- */
 
-
+.dean1 {
+    float: right;
+    max-height: 40vh;
+    margin: -11vh 5vw 5vw 5vw;
+    opacity: 0.9;
+    padding: 20px 20px 40px 20px;
+    border: solid 1px #cbcbcb;
+}
 
 /* ---------------               .our story               --------------- */
 
 /* ---------------               Media               --------------- */
 
 .carousel-inner img {
-  margin: auto;
-  max-height: 60vh;
+    margin: auto;
+    max-height: 60vh;
+    transition: 0.6s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+    opacity: 0.3;
+}
+
+.fullscreen {
+    display: none;
+}
+
+.carousel-inner img:hover .fullscreen {
+    display: block;
+    color: #fff;
+    opacity: 1.0;
+}
+
+#center-text {
+    text-align: center;
+}
+
+#margin {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+audio {
+    display: table;
+    margin: 0 auto;
 }
 
 /* ---------------               .media               --------------- */

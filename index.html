@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 
-<body data-target=".navbar" data-spy="scroll" data-offset-top="100">                <!-- what does data-offset do and why is it not working -->
-
+<body data-target=".navbar" data-spy="scroll" data-offset-top="100">                                    <!-- what does data-offset do and why is it not working -->
+                                                                                        <!-- do i need data-target and data-spy? -->
 
 
     <!-- Nav -->
@@ -37,9 +37,15 @@
                     <li><a href="#media">Media</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact" class="margin-right">Contact</a></li>
-                                                                                                                        <!-- social media links vertical list here -->
+                    <!-- social media links vertical list here -->
                 </ul>
             </div>
+
+            <div id="home1"></div>
+            <div id="our-story1"></div>
+            <div id="media1"></div>
+            <div id="testimonials1"></div>
+            <div id="contact1"></div>
 
             <!-- Nav / .main -->
 
@@ -58,7 +64,7 @@
                     <a href="#media">Media</a>
                     <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
-                                                                                                                        <!-- social media links horizontal list here -->
+                    <!-- social media links horizontal list here -->
                 </div>
             </div>
 
@@ -77,7 +83,7 @@
 
 
 
-    <section class="container-fluid scroll home black white-text" id="home">
+    <section class="container-fluid home black white-text" id="home">
         <div class="row">
             <div class="col-xs-12 section-header">
                 <h1>
@@ -100,17 +106,16 @@
 
     <!-- Our Story -->
 
-    <section class="container-fluid scroll page white black-text" id="our-story">
+    <section class="container-fluid page white black-text" id="our-story">
         <article class="row">
             <div class="col-xs-12">
                 <h1>
                     A bit about me...
                 </h1>
-            </div>
-            <div class="col-xs-12">
                 <p>
                     Hi, I'm Dean Parker. I'm a musician originally from Reading. Here's where my story began...
                 </p>
+                <img src="assets/dean1.jpeg" class="dean1" alt="Dean Parker">
                 <h3>
                     My Roots
                 </h3>
@@ -125,10 +130,8 @@
                 </h3>
                 <p>
                     I've played to live audiences of thousands, I have a bi-monthly gig at a local arts centre, and I'm a part of several local bands. I play the cajon 
-                    regularly, and have dabbled in bass guitar too.
+                    regularly, and have dabbled in bass guitar too. I've played electric guitar to grade five standard, and learnt music theory to grade five too.
                 </p>
-            </div>
-            <div class="col-xs-12">
                 <h3>
                     My Band
                 </h3>
@@ -139,15 +142,13 @@
                     Dennis Armstrong
                 </h5>
                 <p>
-                    Dennis is my bassist and often sings backing vocals. He's a musician who never ceases to amaze me - always improving, always showing me the latest 
-                    skill or technique he's learnt - and I've worked with him for almost 3 years now.
+                    Dennis is my bassist and often sings backing vocals. He's a musician who never ceases to amaze me - always improving, always showing me the latest skill or technique he's learnt - and I've worked with him for almost 3 years now.
                 </p>
                 <h5>
                     Paul Youngs
                 </h5>
                 <p>
-                    Paul is the best drummer I've ever played with, and is an unnaturally natural musician. He's taught himself other instruments too, and is one of 
-                    the best pianists I know.
+                    Paul is the best drummer I've ever played with, and is an unnaturally natural musician. He's taught himself other instruments too, and is one of the best pianists I know.
                 </p>
             </div>
         </article>
@@ -163,75 +164,112 @@
 
     <!-- Media -->
 
-    <section class="container-fluid scroll page black white-text" id="media">
+    <section class="container-fluid page black white-text" id="media">
         <article class="row">
             <div class="col-xs-12">
-                <h1>                                                            <!-- bootstrap carousel, videos in one slide, images in another, audio in another -->
+                <h1>
                     See us in action...
                 </h1>
             </div>
             <div class="col-xs-12">
                 <h3>
-                    Images
+                    Video
+                    <!-- autoplay doesn't work on first video -->
                 </h3>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="assets/1.jpeg" alt="Picture of the band.">
-                        </div>
-                        <div class="item">
-                            <img src="assets/2.jpeg" alt="Picture of the band.">
-                        </div>
-                        <div class="item">
-                            <img src="assets/3.jpeg" alt="Picture of the band.">
-                        </div>
-                        <div class="item">
-                            <img src="assets/4.jpeg" alt="Picture of the band.">
-                        </div>
-                        <div class="item">
-                            <img src="assets/5.jpeg" alt="Picture of the band.">
-                        </div>
-                        <div class="item">
-                            <img src="assets/6.jpeg" alt="Picture of the band.">
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-4">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Fbbt5kisRdk?autoplay=1" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="col-xs-4">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rd6d95o5Y1s" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-xs-offset-4 col-xs-4">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9lRZxa9nwp0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12" id="margin">
+                <h3>
+                    Audio
+                </h3>
+                <div class="col-xs-offset-4 col-xs-4">
+                    <h5 id="center-text">
+                        Listen to our latest single, What's Gotten Into You Lately
+                    </h5>
+                    <audio controls>
+                        <source src="assets/01-Whats-Gotten-Into-You-Lately_.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             </div>
             <div class="col-xs-12">
                 <h3>
-                    Audio
+                    Images
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
-                </p>
-            </div>
-            <div class="col-xs-12">
-                <h3>
-                    Video
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
-                </p>
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                        <li data-target="#carousel" data-slide-to="4"></li>
+                        <li data-target="#carousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="assets/1.jpeg" alt="Picture of the band.">                <!-- click on the image to make it full screen? -->
+                            <p class="fullscreen">
+                                Click for full screen.                                          <!-- not showing? -->
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/2.jpeg" alt="Picture of the band.">
+                            <p class="fullscreen">
+                                Click for full screen.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/3.jpeg" alt="Picture of the band.">
+                            <p class="fullscreen">
+                                Click for full screen.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/4.jpeg" alt="Picture of the band.">
+                            <p class="fullscreen">
+                                Click for full screen.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/5.jpeg" alt="Picture of the band.">
+                            <p class="fullscreen">
+                                Click for full screen.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/6.jpeg" alt="Picture of the band.">
+                            <p class="fullscreen">
+                                Click for full screen.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </article>
     </section>
@@ -246,49 +284,65 @@
 
     <!-- Testimonials -->
 
-    <section class="container-fluid scroll page white black-text" id="testimonials">
+    <section class="container-fluid page white black-text" id="testimonials">
         <article class="row">
             <div class="col-xs-12">
-                <h1>                                                                        <!-- bootstrap carousel each testimony -->
+                <h1>
+                    <!-- bootstrap carousel each testimony -->
                     Hear what people have to say...
                 </h1>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-5 col-md-offset-1">
                 <h3>
                     Look no further than the DPBB!!
                 </h3>
                 <p>
-                    Thank you for making a good wedding reception great! We loved your covers of the songs we chose, and our guests were raving about you to us long 
-                    after our special day! Jane x
+                    "Thank you for making a good wedding reception great! We loved your covers of the songs we chose, and our guests were raving about you to us long 
+                    after our special day! Jane x"
                 </p>
                 <blockquote class="row">
-                    <p>Mark and Jane    |    Wedding    |    Southampton</p>
+                    <p>Mark and Jane | Wedding | Southampton</p>
                 </blockquote>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-5">
                 <h3>
-                    Testimonial 2 title
+                    Excellent entertainment
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    For one of our annual events, we wanted musical entertainment, but so that not everyone had to get involved, only those who wanted to. This is 
+                    outside of the normal style of Dean Parker Blues Band, however they worked with our needs and more than met them.
+                    <br>Very impressed, and will be hiring them again.
                 </p>
                 <blockquote class="row">
-                    <p>Sharon    |    50th birthday party    |    Reading</p>
+                    <p>The Bank | Corporate Event | London</p>
+                    <!-- this text goes over -->
                 </blockquote>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-5 col-md-offset-1">
                 <h3>
-                    Testimonial 3 title
+                    We're musicians, and impressed
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    As professional musicians ourselves, we were worried about finding musicians as consistently good as they often choose to showcase only their 
+                    best performances on their website. These guys were far better live than any videos we saw! You guys exceeded our expectations.
                 </p>
                 <blockquote class="row">
-                    <p>The Bank    |    Corporate Event    |    London</p>        <!-- this text goes over -->
+                    <p>James and Jess | Corporate Event | Cardiff</p>
+                    <!-- this text goes over -->
+                </blockquote>
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <h3>
+                    You Were Amazing
+                </h3>
+                <p>
+                    "The Dean Parker Blues Band played at my 50th Birthday celebration and I loved them! My friends and family couldn't stop dancing and singing to 
+                    the tunes they played. The whole evening was so special to me, one I'll always remember, and the entertainment the Dean Parker Blues Band 
+                    provided meant the evening was enjoyable for all who came.
+                    <br>Thank you so much again! x
+                </p>                                                                                        <!-- design the testimonials layout, with pictures? -->
+                <blockquote class="row">
+                    <p>Sharon | 50th birthday party | Bracknell</p>
                 </blockquote>
             </div>
         </article>
@@ -304,7 +358,7 @@
 
     <!-- Contact -->
 
-    <section class="container-fluid scroll page black white-text" id="contact">
+    <section class="container-fluid page black white-text" id="contact">
         <article class="row">
             <div class="col-xs-12">
                 <h1>
@@ -316,9 +370,8 @@
                     My Background
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid
+                    quisquam, sapiente! Aspernatur consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
                 </p>
             </div>
             <div class="col-xs-12">
@@ -326,9 +379,8 @@
                     My Band
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab 
-                    pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid quisquam, sapiente! Aspernatur 
-                    consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad quo natus quibusdam dignissimos debitis, perspiciatis velit consectetur nam ab pariatur consequuntur cumque tenetur, fugiat porro delectus magni sed iusto optio ullam reiciendis error aliquid
+                    quisquam, sapiente! Aspernatur consequatur, sequi voluptas consequuntur repudiandae! Tempora harum, asperiores laborum. Porro, nulla delectus.
                 </p>
             </div>
         </article>
