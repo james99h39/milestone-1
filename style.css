@@ -1,6 +1,11 @@
+
+
+
 /* ---------------               General               --------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt:400,500|Ruda:900|Russo+One');
+
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt:400|Ruda:900|Russo+One');
 
 /*
 font-family: 'Kaushan Script', cursive;
@@ -11,7 +16,7 @@ font-family: 'Ruda', sans-serif;
 
 html {
     overflow-x: hidden;
-}
+}                                                                                            /* you can scroll this section on md devices */
 
 body {
     background-image: url('assets/background-sm.jpeg');
@@ -39,12 +44,11 @@ body {
 }
 
 .page {
-    min-height: 95vh;
-    /* this only goes to min height and no further as though it's max height */
+    min-height: 95vh;                                                   /* this only goes to min height and no further as though it's max height on some device sizes */
     padding-bottom: 30px;
     margin: 7px;
     border-radius: 1vh;
-}
+}                                                                                   /* on xs devices, it's broken, .page takes about ~60% of the screen width */
 
 .page h1 {
     font-family: 'Kaushan Script', cursive;
@@ -68,7 +72,7 @@ body {
 
 .page h5 {
     font-family: 'Prompt', sans-serif;
-    font-weight: 500;
+    font-style: italic;
 }
 
 .clear {
@@ -120,9 +124,13 @@ body {
     }
 }
 
+
+
 /* ---------------               .general               --------------- */
 
 /* ---------------               Nav               --------------- */
+
+
 
 .navbar {
     background-color: #000;
@@ -130,6 +138,8 @@ body {
     font-family: 'Ruda', sans-serif;
     margin-bottom: 0;
     border: none;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
 }
 
 /* I want the navbar to be about 5px height until you hover on it, or to enlarge once you scroll, JavaScript? */
@@ -265,9 +275,13 @@ nav>li>a:focus,
     }
 }
 
+
+
 /* ---------------               .nav               --------------- */
 
 /* ---------------               Home               --------------- */
+
+
 
 .home {
     margin-top: 0;
@@ -342,22 +356,45 @@ section .section-header h3 {
     }
 }
 
+
+
 /* ---------------               .home               --------------- */
 
 /* ---------------               Our Story               --------------- */
 
+
+
 .dean1 {
     float: right;
-    max-height: 40vh;
+    max-height: 30vh;
     margin: -11vh 5vw 5vw 5vw;
     opacity: 0.9;
-    padding: 20px 20px 40px 20px;
+    padding: 10px 10px 20px 10px;
     border: solid 1px #cbcbcb;
+}                                                                                /* text over the top of the img at sm */
+
+@media (min-width:992px){
+    .dean1 {
+        float: right;
+        max-height: 40vh;
+        margin: -11vh 5vw 5vw 5vw;
+        opacity: 0.9;
+        padding: 20px 20px 40px 20px;
+        border: solid 1px #cbcbcb;
+    }
 }
+
+
 
 /* ---------------               .our story               --------------- */
 
 /* ---------------               Media               --------------- */
+
+
+
+.videos {
+    margin-top: 15px;
+}                                                                                    /* this class doesn't work */
 
 .carousel-inner img {
     margin: auto;
@@ -382,6 +419,15 @@ section .section-header h3 {
     opacity: 1.0;
 }
 
+.carousel-caption {
+    display: none;
+    margin-bottom: 25px;
+}
+
+.carousel-caption:hover {
+    display: block;
+}
+
 #center-text {
     text-align: center;
 }
@@ -396,9 +442,13 @@ audio {
     margin: 0 auto;
 }
 
+
+
 /* ---------------               .media               --------------- */
 
 /* ---------------               Testimonials               --------------- */
+
+
 
 blockquote {
     font-size: 16px;
@@ -411,4 +461,77 @@ blockquote p {
     margin-left: 20px;
 }
 
+
+
 /* ---------------               .testimonials               --------------- */
+
+/* ---------------               Contact               --------------- */
+
+
+
+.contact-heading {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#text-center {
+    font-weight: 400;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;                                                            /* make bigger font-size and sort out margins etc */
+}
+
+button[type="submit"] {
+    background: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+                                                                                        /* when you press send, it refreshes and goes back to the home section */
+button[type="submit"]:focus,
+button[type="submit"]:active {
+    outline:none !important;
+}
+
+section .btn-secondary {
+    font-family: 'Ruda', sans-serif;
+    padding: 12px 0;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+    transition: all 0.15s ease-in-out;
+}
+
+section .btn-secondary:hover {
+    transform: scale(1.2);
+    color: #ccc;
+    background-color: transparent;
+}
+
+@media (min-width:992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+    .kaushan {                                                                          /*it's not working, the original or the media rule */
+        font-size: 35px;
+        margin-top: 0px;
+        margin-bottom: 45px;
+        margin-left: 50px;
+    }
+}
+
+
+
+/* ---------------               .contact               --------------- */
+
