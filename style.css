@@ -153,24 +153,14 @@ body {
     float: right;
 }
 
-.current:after {
-    position: absolute;
-    height: 3px;
-    margin: 0 auto;
-    content: '';
-    left: 0;
-    right: 0;
-    width: 35px;
-    background-color: #fff;
-    border: 1px solid #000;
-    bottom: 8px;
-}
-
-/* how to make the underline on home change */
-
 nav>li>a,
 .navbar-default .navbar-nav>li>a {
     transition: all 0.15s ease-in-out;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ccc;
+    background-color: transparent;
 }
 
 nav>li>a:focus,
@@ -405,8 +395,6 @@ section .section-header h3 {
 .carousel-inner img:hover {
     transform: scale(1.25);
     position: relative;
-    z-index: 5;
-    opacity: 0.3;
 }
 
 .fullscreen {
@@ -486,6 +474,12 @@ blockquote p {
 
 .kaushan {
     font-family: 'Kaushan Script', cursive;                                                            /* make bigger font-size and sort out margins etc */
+}
+
+form .col-sm-6,
+form .col-xs-12 {
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 button[type="submit"] {

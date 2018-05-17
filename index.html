@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -393,14 +392,21 @@
             </div>
             <div class="center-form">
                 <form action="mailto:dpbb@gmail.com" method="post" enctype="text/plain">
-                    
-                      <!-- i want two per row, each one half the width of the summary box, from sm onwards -->
-
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Full name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email address" required/>
-                    <input type="text" name="location" class="form-control" id="location" placeholder="Location" required/>
-                    <input type="text" name="event" class="form-control" id="event" placeholder="Event type" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Summary of what you'll require from me" required></textarea>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Full name" required/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email address" required/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="location" class="form-control" id="location" placeholder="Location" required/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="event" class="form-control" id="event" placeholder="Event type" required/>
+                    </div>
+                    <div class="col-xs-12">
+                        <textarea rows="5" name="projectsummary" class="form-control no-padding" id="projectsummary" placeholder="Summary of what you'll require from me" required></textarea>
+                    </div>
                     <button type="submit" class="btn btn-secondary center-block">Send</button>
                 </form>
             </div>
@@ -447,6 +453,9 @@
     <!-- .footer -->
 
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
