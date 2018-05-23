@@ -140,9 +140,9 @@ body {
     border: none;
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
+    margin-left: 7px;
+    margin-right: 7px;
 }
-
-/* I want the navbar to be about 5px height until you hover on it, or to enlarge once you scroll, JavaScript? */
 
 .navbar-default .navbar-nav>li>a {
     color: #fff
@@ -159,14 +159,14 @@ nav>li>a,
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #ccc;
+    color: #999;                                                                                                                     /* this has stopped working */
     background-color: transparent;
 }
 
 nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     transform: scale(1.2);
-    color: #ccc;
+    color: #999;
     background-color: transparent;
 }
 
@@ -279,6 +279,8 @@ nav>li>a:focus,
     min-height: 100vh;
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 /* a downwards arrow due to the menu being hidden, that scrolls down to our-story */
@@ -300,6 +302,10 @@ section .section-header h3 {
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
     margin-top: 15px;
+}
+
+.fa-arrow-circle-o-down {
+    font-size: 30px;
 }
 
 
@@ -365,12 +371,9 @@ section .section-header h3 {
 
 @media (min-width:992px){
     .dean1 {
-        float: right;
         max-height: 40vh;
         margin: -11vh 5vw 5vw 5vw;
-        opacity: 0.9;
         padding: 20px 20px 40px 20px;
-        border: solid 1px #cbcbcb;
     }
 }
 
@@ -382,11 +385,23 @@ section .section-header h3 {
 
 
 
+.col-xs-12 .note {
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+    z-index: -1;
+    display: inline;
+}
+
 .videos {
     margin-top: 15px;
 }                                                                                    /* this class doesn't work */
 
-.carousel-inner img {
+iframe {
+    border: solid 1px #fff;
+}
+
+.carousel-inner img {                                                                /* carousel not working again */
     margin: auto;
     max-height: 60vh;
     transition: 0.6s ease-in-out;
@@ -420,6 +435,11 @@ section .section-header h3 {
     text-align: center;
 }
 
+#click-fs {
+    text-align: center;
+    margin-top: 5px;
+}
+
 #margin {
     margin-top: 15px;
     margin-bottom: 30px;
@@ -427,7 +447,7 @@ section .section-header h3 {
 
 audio {
     display: table;
-    margin: 0 auto;
+    margin: 7px auto;
 }
 
 
@@ -457,13 +477,27 @@ blockquote p {
 
 
 
+#contact h5 {
+    margin-top: 80px;
+    padding-bottom: 25px;
+}
+
 .contact-heading {
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
-#text-center {
-    font-weight: 400;
+.text-center .visible-xs,
+.text-center .visible-sm,
+.text-center .visible-md,
+.text-center .visible-lg {
+                                                                    /* span tag causes line breaks, so I added this display style and now it displays both */
+    display: inline !important;                                     /* I have the xs span tag so it's only on phones you can click on the number and it rings */
+}
+
+.text-center a {
+    text-decoration: none;
+    color: #999;
 }
 
 .center-form {
@@ -476,10 +510,13 @@ blockquote p {
     font-family: 'Kaushan Script', cursive;                                                            /* make bigger font-size and sort out margins etc */
 }
 
+form {
+    font-family: 'Prompt', sans-serif;
+}
+
 form .col-sm-6,
 form .col-xs-12 {
-    padding-left: 1px;
-    padding-right: 1px;
+    padding: 1px;
 }
 
 button[type="submit"] {
@@ -501,12 +538,12 @@ section .btn-secondary {
     text-align: center;
     background-color: transparent;
     font-size: 20px;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-out;
 }
 
 section .btn-secondary:hover {
     transform: scale(1.2);
-    color: #ccc;
+    color: #999;
     background-color: transparent;
 }
 
@@ -529,3 +566,56 @@ section .btn-secondary:hover {
 
 /* ---------------               .contact               --------------- */
 
+/* ---------------               Footer               --------------- */
+
+
+
+.footer {
+    margin-left: 7px;
+    margin-right: 7px;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #999;
+    text-align: center;
+}
+
+a:focus, a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+
+footer .social-links {                                                                      /* the social media links aren't centered */
+    padding-top: 15px;
+    padding-bottom: 50px;
+    list-style: none;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 8px;
+    background-color: transparent;
+    transition: all 0.25 ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: #999;
+}
+
+.copyright {
+    margin-top: 30px;
+}
+
+
+
+
+/* ---------------               .footer               --------------- */

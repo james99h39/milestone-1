@@ -9,16 +9,14 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 
-<body data-target=".navbar" data-spy="scroll" data-offset="550">
-    <!-- what does data-offset do and why is it not working -->
-    <!-- do i need data-target and data-spy? -->
+<body data-target=".navbar" data-spy="scroll" data-offset="150">
+    
 
 
     <!-- Nav -->
@@ -34,7 +32,7 @@
             <!-- Nav / Main -->
 
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav smooth-scroll">
                     <li><a href="#home" class="current">Home</a></li>
                     <li><a href="#our-story">Our Story</a></li>
                     <li><a href="#media">Media</a></li>
@@ -94,6 +92,11 @@
                 <h3>
                     and this is my blues band.
                 </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <span><i class="fa fa-arrow-circle-o-down"></i></span>
             </div>
         </div>
     </section>
@@ -179,6 +182,11 @@
             <div class="col-xs-12">
                 <h1>
                     See us in action...
+                    <div class="note">
+                        <p>
+                            <span class="label label-success">New!</span> New content being added soon!
+                        </p>
+                    </div>
                 </h1>
             </div>
             <div class="col-xs-12">
@@ -193,14 +201,14 @@
                     </div>
                     <div class="col-xs-10 col-xs-offset-1 col-sm-4">
                         <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rd6d95o5Y1s" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rd6d95o5Y1s?autoplay=1" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
                         <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9lRZxa9nwp0" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9lRZxa9nwp0?autoplay=1" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -213,6 +221,19 @@
                     <h5 id="center-text">
                         Listen to our latest single, What's Gotten Into You Lately
                     </h5>
+                    <audio controls>
+                        <source src="assets/01-Whats-Gotten-Into-You-Lately_.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+                    <h5 id="center-text">
+                        Here are some of my other audio recordings
+                    </h5>
+                    <audio controls>
+                        <source src="assets/01-Whats-Gotten-Into-You-Lately_.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                     <audio controls>
                         <source src="assets/01-Whats-Gotten-Into-You-Lately_.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
@@ -236,10 +257,6 @@
                         <a href="assets/1.jpeg" target="_blank" class="item active">
                             <img src="assets/1.jpeg" alt="Picture of the band.">
                             <!-- click on the image to make it full screen? -->
-                            <div class="carousel-caption">
-                                Click for full screen.
-                                <!-- not showing? -->
-                            </div>
                         </a>
                         <a href="assets/2.jpeg" target="_blank" class="item">
                             <img src="assets/2.jpeg" alt="Picture of the band.">
@@ -280,6 +297,9 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <p id="click-fs">
+                        Click for full screen.
+                    </p>
                 </div>
             </div>
         </article>
@@ -311,8 +331,8 @@
                     Look no further than the DPBB!!
                 </h3>
                 <p>
-                    <i class="fa fa-quote-left"></i> Thank you for making a good wedding reception great! We loved your covers of the songs we chose, and our guests were raving about you to us long 
-                    after our special day! Jane x
+                    <i class="fa fa-quote-left"></i> Thank you for making a good wedding reception great! We loved your covers of the songs we chose, and our guests 
+                    were raving about you to us long after our special day! Jane x
                 </p>
                 <blockquote class="row">
                     <p>Mark and Jane | Wedding | Southampton</p>
@@ -336,8 +356,9 @@
                     We're musicians, and impressed
                 </h3>
                 <p>
-                    <i class="fa fa-quote-left"></i> As professional musicians ourselves, we were worried about finding musicians as consistently good as they often choose to showcase only their best performances on their website. These guys were far better live than any videos we saw! You guys exceeded
-                    our expectations.
+                    <i class="fa fa-quote-left"></i> As professional musicians ourselves, we were worried about finding musicians as consistently good as they often 
+                    choose to showcase only their best performances on their website. These guys were far better live than any videos we saw! You guys exceeded our 
+                    expectations.
                 </p>
                 <blockquote class="row">
                     <p>James and Jess | Corporate Event | Cardiff</p>
@@ -348,8 +369,9 @@
                     You Were Amazing
                 </h3>
                 <p>
-                    <i class="fa fa-quote-left"></i> The Dean Parker Blues Band played at my 50th Birthday celebration and I loved them! My friends and family couldn't stop dancing and singing to the tunes they played. The whole evening was so special to me, one I'll always remember, and the entertainment
-                    the Dean Parker Blues Band provided meant the evening was enjoyable for all who came.
+                    <i class="fa fa-quote-left"></i> The Dean Parker Blues Band played at my 50th Birthday celebration and I loved them! My friends and family 
+                    couldn't stop dancing and singing to the tunes they played. The whole evening was so special to me, one I'll always remember, and the 
+                    entertainment the Dean Parker Blues Band provided meant the evening was enjoyable for all who came.
                     <br>Thank you so much again!xx
                 </p>
                 <blockquote class="row">
@@ -377,16 +399,14 @@
         <article class="row">
             <div class="col-xs-12">
                 <h1>
-                    You're interested.
+                    You're interested. 
+                    <span class="hidden-sm hidden-md hidden-lg"><br></span>So am I.
                 </h1>
-                <h3 class="contact-heading kaushan">
-                    So am I.
-                </h3>
             </div>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <h5 class="text-center">
                     Whether it's parties, weddings, corporate events, or anything else needing excellent musical entertainment,
-                    <br>call me on 07420079849 during the hours of 9am-5pm or
+                    <br>call me on <span class="visible-xs hidden-sm hidden-md hidden-lg"><a href="tel:077531180950" target="_blank">07420079849</a></span><span class="hidden-xs visible-sm visible-md visible-lg">07420079849</span> during the hours of 9am-5pm or
                     <br>email me using the form below.
                 </h5>
             </div>
@@ -417,32 +437,30 @@
 
     <!-- .contact -->
 
+
+
+    <div class="clear"></div>
+
+
+
     <!-- Footer -->
 
 
 
-    <footer class="container-fluid white black-text">
+    <footer class="container-fluid footer white black-text">
         <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <h5 class="">
-                    About
-                </h5>
-                <p class="">
-                    Full Stack Web Developer.
-                    <br>Experience with HTML, CSS, JavaScript, Python and MySQL.
-                    <br>I work with Bootstrap, jQuery, Django and MongoDB.
+            <div class="col-xs-12">
+                <p class="copyright">
+                    <i class="fa fa-copyright"></i> Dean Parker Blues Band 2018 | Website made by <a href="https://github.com/jamesahorne">jamesahorne</a>
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4"></div>
-            <div class="col-xs-12 col-sm-4">
-                <h5 class="">
-                    Contact Me
-                </h5>
-                <ul class="list-inline social-links row">
-                    <li class="col-sm-3"><a href="mailto:james99h39@gmail.com" target="_blank"><i class="glyphicon glyphicon-envelope"></i></a></li>
-                    <li class="col-sm-3"><a href="tel:077531180950" target="_blank"><i class="glyphicon glyphicon-phone"></i></a></li>
-                    <li class="col-sm-3"><a href="https://www.linkedin.com/in/james-horne-734499159/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="col-sm-3"><a href="https://www.facebook.com/james.horne.31" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="social-links">
+                    <li class="col-sm-3"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="col-sm-3"><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="col-sm-3"><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -453,9 +471,6 @@
     <!-- .footer -->
 
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
