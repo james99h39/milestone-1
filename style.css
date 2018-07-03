@@ -6,17 +6,10 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt:400|Ruda:900|Russo+One');
-
-/*
-font-family: 'Kaushan Script', cursive;
-font-family: 'Russo One', sans-serif;
-font-family: 'Prompt', sans-serif;
-font-family: 'Ruda', sans-serif;
-*/
-
+                                                                                                                    /* DO THE README.md!!! */
 html {
     overflow-x: hidden;
-}                                                                                            /* you can scroll this section on md devices */
+}
 
 body {
     background-image: url('assets/background-sm.jpeg');
@@ -44,11 +37,9 @@ body {
 }
 
 .page {
-    min-height: 95vh;                                                   /* this only goes to min height and no further as though it's max height on some device sizes */
-    padding-bottom: 30px;
-    margin: 7px;
-    border-radius: 1vh;
-}                                                                                   /* on xs devices, it's broken, .page takes about ~60% of the screen width */
+    padding-bottom: 40px;
+    min-height: 80vh;
+}
 
 .page h1 {
     font-family: 'Kaushan Script', cursive;
@@ -80,6 +71,14 @@ body {
     height: 30vh;
 }
 
+:target:before {
+            content: "";
+            display: block;
+            height: 70px;
+            margin: -90px 0 0;
+        }
+
+
 
 
 @media (min-width:768px) {
@@ -88,14 +87,9 @@ body {
         background-image: url('assets/background.jpeg');
     }
     .page h1 {
-        font-size: 30px;
-        /* do i need font-size and margin-top? */
         margin-top: 30px;
         margin-left: 10px;
         margin-bottom: 15px;
-    }
-    .page h3 {
-        font-size: 16px;
     }
     .page p {
         font-size: 14px;
@@ -134,14 +128,11 @@ body {
 
 .navbar {
     background-color: #000;
-                                            /* when the content background is white, can the navbar background change to white too, and change back to black etc? */
     font-family: 'Ruda', sans-serif;
     margin-bottom: 0;
     border: none;
-    border-bottom-left-radius: 1vh;
-    border-bottom-right-radius: 1vh;
-    margin-left: 7px;
-    margin-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -159,7 +150,7 @@ nav>li>a,
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #999;                                                                                                                     /* this has stopped working */
+    color: #999;
     background-color: transparent;
 }
 
@@ -233,6 +224,8 @@ nav>li>a:focus,
 
 
 
+
+
 @media (min-width:768px) {
     .logo-nav {
         height: 50px;
@@ -241,8 +234,8 @@ nav>li>a:focus,
 
 @media (min-width:992px) {
     .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .margin-right {
         margin-right: 30px;
@@ -257,7 +250,7 @@ nav>li>a:focus,
     }
     .logo-nav {
         width: auto;
-        height: 79px;
+        height: 75px;
         padding-top: 0px;
         padding-left: 0px;
         margin-top: -30px;
@@ -277,13 +270,7 @@ nav>li>a:focus,
     margin-top: 0;
     padding-top: 20vh;
     min-height: 100vh;
-    border-bottom-left-radius: 1vh;
-    border-bottom-right-radius: 1vh;
-    margin-left: 7px;
-    margin-right: 7px;
 }
-
-/* a downwards arrow due to the menu being hidden, that scrolls down to our-story */
 
 section .section-header {
     letter-spacing: 3px;
@@ -304,8 +291,21 @@ section .section-header h3 {
     margin-top: 15px;
 }
 
-.fa-arrow-circle-o-down {
-    font-size: 30px;
+.down-arrow {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30vh;
+    animation: bounce 4s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes bounce {
+  0%, 10%, 20% {
+    transform: translateY(0);
+  }
+  5%, 15% {
+    transform: translateY(-30px);
+  }
 }
 
 
@@ -315,12 +315,7 @@ section .section-header h3 {
         margin-top: 0;
     }
     section .section-header {
-        font-family: 'Kaushan Script', cursive;
-        letter-spacing: 3px;
-        color: #fff;
-        text-align: center;
         margin-top: 30px;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     section .section-header h1 {
         font-size: 55px;
@@ -336,12 +331,7 @@ section .section-header h3 {
         margin-top: 50px
     }
     section .section-header {
-        font-family: 'Kaushan Script', cursive;
-        letter-spacing: 3px;
-        color: #fff;
-        text-align: center;
         margin-top: 25px;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     section .section-header h1 {
         font-size: 75px;
@@ -363,16 +353,16 @@ section .section-header h3 {
 .dean1 {
     float: right;
     max-height: 30vh;
-    margin: -11vh 5vw 5vw 5vw;
+    margin: 0vh 2vw 2vw 2vw;
     opacity: 0.9;
     padding: 10px 10px 20px 10px;
     border: solid 1px #cbcbcb;
-}                                                                                /* text over the top of the img at sm */
+}
 
 @media (min-width:992px){
     .dean1 {
         max-height: 40vh;
-        margin: -11vh 5vw 5vw 5vw;
+        margin: 2vh 2vw 2vw 2vw;
         padding: 20px 20px 40px 20px;
     }
 }
@@ -390,18 +380,18 @@ section .section-header h3 {
     margin-top: 30px;
     margin-right: 80px;
     z-index: -1;
-    display: inline;
+    display: block;
 }
 
 .videos {
     margin-top: 15px;
-}                                                                                    /* this class doesn't work */
+}
 
 iframe {
     border: solid 1px #fff;
 }
 
-.carousel-inner img {                                                                /* carousel not working again */
+.carousel-inner img {
     margin: auto;
     max-height: 60vh;
     transition: 0.6s ease-in-out;
@@ -487,27 +477,15 @@ blockquote p {
     margin-bottom: 25px;
 }
 
-.text-center .visible-xs,
-.text-center .visible-sm,
-.text-center .visible-md,
-.text-center .visible-lg {
-                                                                    /* span tag causes line breaks, so I added this display style and now it displays both */
-    display: inline !important;                                     /* I have the xs span tag so it's only on phones you can click on the number and it rings */
-}
-
 .text-center a {
-    text-decoration: none;
-    color: #999;
+    text-decoration: underline;
+    color: #fff;
 }
 
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
     max-width: 70%;
-}
-
-.kaushan {
-    font-family: 'Kaushan Script', cursive;                                                            /* make bigger font-size and sort out margins etc */
 }
 
 form {
@@ -524,7 +502,7 @@ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
 }
-                                                                                        /* when you press send, it refreshes and goes back to the home section */
+
 button[type="submit"]:focus,
 button[type="submit"]:active {
     outline:none !important;
@@ -554,12 +532,6 @@ section .btn-secondary:hover {
         margin: 0 auto;
         max-width: 50%;
     }
-    .kaushan {                                                                          /*it's not working, the original or the media rule */
-        font-size: 35px;
-        margin-top: 0px;
-        margin-bottom: 45px;
-        margin-left: 50px;
-    }
 }
 
 
@@ -571,16 +543,13 @@ section .btn-secondary:hover {
 
 
 .footer {
-    margin-left: 7px;
-    margin-right: 7px;
-    border-top-left-radius: 1vh;
-    border-top-right-radius: 1vh;
     text-align: center;
+    margin-top: -2px;
 }
 
 footer a {
-    text-decoration: none;
-    color: #999;
+    text-decoration: underline;
+    color: #fff;
     text-align: center;
 }
 
@@ -589,10 +558,11 @@ a:focus, a:hover {
     text-decoration: underline;
 }
 
-footer .social-links {                                                                      /* the social media links aren't centered */
+footer .social-links {
     padding-top: 15px;
     padding-bottom: 50px;
     list-style: none;
+    padding-left: 0;
 }
 
 .social-links li a i {
@@ -600,7 +570,7 @@ footer .social-links {                                                          
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    color: #000;
+    color: #fff;
     text-align: center;
     line-height: 8px;
     background-color: transparent;
@@ -619,3 +589,5 @@ footer .social-links {                                                          
 
 
 /* ---------------               .footer               --------------- */
+
+
