@@ -1,18 +1,11 @@
+This project is a website for the Dean Parker Blues Band to showcase their music and publicise their availability to perform at different types of events such as parties, weddings and corporate events. This website also enables the fans to see and hear previous shows and performances and listen to the band's back catalogue, as well as any new material once it is made available.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+In the navigation bar, the navigation links scroll down the page when clicked on. When the user manually scrolls down the page and a certain section of the page is visible in the viewport, the navigation link that is linked with that section is highlighted.
+In the Media section, I embedded YouTube videos to play, audio files to listen to and a picture carousel to navigate between different images of the band. If you click on an image it opens a new tab with the image enlarged (fullscreen).
+In the Contact section, I have included a mail form with required fields that, on clicking send, will open the mail application (if the mail app is connected to the browser). Also, on clicking the phone number in the description above the contact form, your device will give the option to ring the number (available on xs devices only).
+I have used the Bootstrap 3.3.7 library for the grid system and lots of their pre-set classes, such as those in the navigation bar. I have used the Font Awesome library for the quote mark icons in the testimonials section.
 
+The website is deployed and hosted on github (https://jamesahorne.github.io/milestone-1/).
+The website was tested on various browsers on my machine to ensure it functioned properly at different screen sizes. I used a mobile device to verify. I also used user stories to test my website's functionality.
 
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+I've adapted the code for Bootstrap's carousel, I kept the HTML structure the same but changed attribute values to more suitable ones, such as the image tag's source attribute. I have also based my dropdown button (for xs devices) off Bootstrap's examples, again keeping the HTML structure but using CSS to make it better fit my purposes, for example changing the display to "none", but setting the hover pseudo class's display to "block" as I only want it to show once hovered.
