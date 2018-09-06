@@ -38,7 +38,7 @@ body {
 
 .page {
     padding-bottom: 40px;
-    min-height: 80vh;
+    min-height: 50vh;
 }
 
 .page h1 {
@@ -150,14 +150,14 @@ nav>li>a,
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #999;
+    color: #ccc;
     background-color: transparent;
 }
 
 nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     transform: scale(1.2);
-    color: #999;
+    color: #ccc;
     background-color: transparent;
 }
 
@@ -211,7 +211,7 @@ nav>li>a:focus,
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #ccc;
 }
 
 .dropdown:hover .dropdown-content {
@@ -356,7 +356,7 @@ section .section-header h3 {
     margin: 0vh 2vw 2vw 2vw;
     opacity: 0.9;
     padding: 10px 10px 20px 10px;
-    border: solid 1px #cbcbcb;
+    border: solid 1px #ccc;
 }
 
 @media (min-width:992px){
@@ -521,7 +521,7 @@ section .btn-secondary {
 
 section .btn-secondary:hover {
     transform: scale(1.2);
-    color: #999;
+    color: #ccc;
     background-color: transparent;
 }
 
@@ -554,7 +554,7 @@ footer a {
 }
 
 a:focus, a:hover {
-    color: #999;
+    color: #ccc;
     text-decoration: underline;
 }
 
@@ -578,7 +578,7 @@ footer .social-links {
 }
 
 .social-links li a i:hover {
-    background-color: #999;
+    background-color: #ccc;
 }
 
 .copyright {
