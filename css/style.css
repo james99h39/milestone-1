@@ -78,7 +78,7 @@ body {
 @media (min-width:768px) {
     body {
         padding-top: 50px;
-        background-image: url('assets/background.jpeg');
+        background-image: url('../assets/background.jpeg');
     }
     .page h1,
     .page h2 {
@@ -93,7 +93,7 @@ body {
 
 @media (min-width:992px) {
     body {
-        background-image: url('assets/background-lg.jpeg');
+        background-image: url('../assets/background-lg.jpeg');
     }
     .page h1 {
         font-family: 'Kaushan Script', cursive;
