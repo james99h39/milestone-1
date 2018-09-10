@@ -28,7 +28,7 @@ To test the image carousel in the Media section, I used all the controls to swit
 To test the contact form in the Contact section, I first tried to submit an empty form, but I got an error message telling me to fill in the first text field (Full name). This was the same for all the fields I didn’t complete, except the Email field – the Email field’s error message said that I needed a format of text@text to be valid. Once I filled out the contact form correctly and submitted the form, I was taken to my mail app as expected.
 
 These tests were performed on various browsers on my machine to ensure the website functioned properly at different screen sizes. I used a mobile device to verify.
-My website looks and works the same on different browsers, however in some browsers the autoplay feature included in the first embedded YouTube video causes the video to play immediately once the page is loaded. In Microsoft Edge, the email field doesn’t require the text@text format, any text is valid. These are problems I haven’t fixed yet. 
+My website looks and works the same on different browsers, however in Microsoft Edge the email field doesn’t require the text@text format, any text is valid. This is a problem I haven’t fixed yet.
 
 ## Deployment
 The website is deployed and hosted on GitHub (https://jamesahorne.github.io/milestone-1/). To deploy, I used GitHub Pages. In my GitHub account, in the repository for this project, I went into Settings, scrolled down to the GitHub Pages area, and changed the source of my website from none to ‘master branch’. There are no differences between the deployed version and the development version.

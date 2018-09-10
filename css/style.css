@@ -1,8 +1,4 @@
-
-
-
 /* ---------------               General               --------------- */
-
 
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Prompt:400|Ruda:900|Russo+One');
@@ -12,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url('assets/background-sm.jpeg');
+    background-image: url('../assets/background-sm.jpeg');
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: fixed;
@@ -41,7 +37,8 @@ body {
     min-height: 50vh;
 }
 
-.page h1 {
+.page h1,
+.page h2 {
     font-family: 'Kaushan Script', cursive;
     font-size: 30px;
     margin-top: 20px;
@@ -78,15 +75,13 @@ body {
             margin: -90px 0 0;
         }
 
-
-
-
 @media (min-width:768px) {
     body {
         padding-top: 50px;
         background-image: url('assets/background.jpeg');
     }
-    .page h1 {
+    .page h1,
+    .page h2 {
         margin-top: 30px;
         margin-left: 10px;
         margin-bottom: 15px;
@@ -119,11 +114,7 @@ body {
 }
 
 
-
-/* ---------------               .general               --------------- */
-
 /* ---------------               Nav               --------------- */
-
 
 
 .navbar {
@@ -259,11 +250,7 @@ nav>li>a:focus,
 }
 
 
-
-/* ---------------               .nav               --------------- */
-
 /* ---------------               Home               --------------- */
-
 
 
 .home {
@@ -343,11 +330,7 @@ section .section-header h3 {
 }
 
 
-
-/* ---------------               .home               --------------- */
-
 /* ---------------               Our Story               --------------- */
-
 
 
 .dean1 {
@@ -368,16 +351,12 @@ section .section-header h3 {
 }
 
 
-
-/* ---------------               .our story               --------------- */
-
 /* ---------------               Media               --------------- */
-
 
 
 .col-xs-12 .note {
     float: right;
-    margin-top: 30px;
+    margin-top: -32px;
     margin-right: 80px;
     z-index: -1;
     display: block;
@@ -421,7 +400,7 @@ iframe {
     display: block;
 }
 
-#center-text {
+.center-text {
     text-align: center;
 }
 
@@ -441,11 +420,7 @@ audio {
 }
 
 
-
-/* ---------------               .media               --------------- */
-
 /* ---------------               Testimonials               --------------- */
-
 
 
 blockquote {
@@ -460,11 +435,7 @@ blockquote p {
 }
 
 
-
-/* ---------------               .testimonials               --------------- */
-
 /* ---------------               Contact               --------------- */
-
 
 
 #contact h5 {
@@ -535,11 +506,7 @@ section .btn-secondary:hover {
 }
 
 
-
-/* ---------------               .contact               --------------- */
-
 /* ---------------               Footer               --------------- */
-
 
 
 .footer {
@@ -574,7 +541,7 @@ footer .social-links {
     text-align: center;
     line-height: 8px;
     background-color: transparent;
-    transition: all 0.25 ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .social-links li a i:hover {
@@ -584,10 +551,3 @@ footer .social-links {
 .copyright {
     margin-top: 30px;
 }
-
-
-
-
-/* ---------------               .footer               --------------- */
-
-
